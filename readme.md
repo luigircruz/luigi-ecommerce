@@ -9,6 +9,7 @@ This is an e-commerce site powered by [Laravel 5.8](https://laravel.com/docs/5.8
 * Create and edit your own .env: $ `cp .env.example .env`
 * Generate key for the project:  $ `php artisan key:generate`
 * Setup database:                $ `php artisan migrate --seed`
+* Go to URL yourport/admin:      $ `Ex. 127.0.0.1:8000/admin`
 * Enter login details:           $ `Username: luigicruz@admin.com, Password: secret`
 
 That's it!
