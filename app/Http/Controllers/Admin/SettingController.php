@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\BaseController;
+use App\Models\Setting;
 use App\Traits\UploadAble;
+use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
+use App\Http\Controllers\BaseController;
 
 class SettingController extends BaseController
 {
+	use UploadAble;
+
     /**
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
@@ -16,7 +20,7 @@ class SettingController extends BaseController
 	    $this->setPageTitle('Settings', 'Manage Settings');
 	    return view('admin.settings.index');
 	}
-
+	
 	/**
 	 * @param Request $request
 	 * @return \Illuminate\Http\RedirectResponse
