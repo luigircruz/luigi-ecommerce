@@ -18,9 +18,21 @@ class Category extends Model
         'menu'      =>  'boolean'
     ];
 
+    // Mutators
     public function setNameAttribute($value)
 	{
 	    $this->attributes['name'] = $value;
 	    $this->attributes['slug'] = str_slug($value);
+	}
+
+	// Relationships
+	public function parent()
+	{
+	    return $this->belongsTo(Category::class, 'parent_id');
+	}
+
+	public function children()
+	{
+	    return $this->hasMany(Category::class, 'parent_id');
 	}
 }
