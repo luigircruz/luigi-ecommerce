@@ -7,7 +7,6 @@ This is an e-commerce site powered by [Laravel 5.8](https://laravel.com/docs/5.8
 * Open the project:              $ `cd luigi-ecommerce`
 * Install dependencies:          $ `composer install`
 * Create your own database:      $ `create database table on your sql server/mysql`
-* Copy and edit your own .env: $ `cp .env.example .env`
 * Copy and edit your own .env:   $ `cp .env.example .env`
 * Generate key for the project:  $ `php artisan key:generate`
 * Setup database:                $ `php artisan migrate --seed`
