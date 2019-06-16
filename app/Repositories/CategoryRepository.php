@@ -130,4 +130,6 @@ class CategoryRepository extends BaseRepository implements CategoryContract
 
 	    return $category;
 	}
+
+	
 }
