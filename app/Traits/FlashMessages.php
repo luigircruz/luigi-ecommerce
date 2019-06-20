@@ -77,5 +77,16 @@ trait FlashMessages
             'warning'   =>  $this->warningMessages,
         ];
     }
+
+    /**
+     * Flashing flash messages to Laravel's session
+     */
+    protected function showFlashMessages()
+    {
+        session()->flash('error', $this->errorMessages);
+        session()->flash('info', $this->infoMessages);
+        session()->flash('success', $this->successMessages);
+        session()->flash('warning', $this->warningMessages);
+    }
 }
 
