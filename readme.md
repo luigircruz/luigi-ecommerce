@@ -16,3 +16,5 @@ This is an e-commerce site powered by [Laravel 5.8](https://laravel.com/docs/5.8
 
 That's it!
 
+## Fixes
+* Link storage to public folder for images: $ `php artisan storage:link`
