@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Config;
 
 class Setting extends Model
 {
+
     /**
      * @var string
      */
