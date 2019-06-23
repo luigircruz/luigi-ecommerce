@@ -29,4 +29,13 @@ class Attribute extends Model
         'is_filterable' =>  'boolean',
         'is_required'   =>  'boolean',
     ];
+
+    // RELATIONSHIPS
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function values()
+    {
+        return $this->hasMany(AttributeValue::class);
+    }
 }

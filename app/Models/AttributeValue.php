@@ -28,4 +28,13 @@ class AttributeValue extends Model
     protected $casts = [
         'attribute_id'  =>  'integer',
     ];
+
+    // RELATIONSHIPS
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function attribute()
+    {
+        return $this->belongsTo(Attribute::class);
+    }
 }
